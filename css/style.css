@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+html{
+  height: 100%;
+
+}
+body{
+  color: #666666;
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1320px;
+}
+ul,ol{list-style: none;}
+a{color:white;}
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+}
+
+/* header area */
+#header-wrap{
+  width: 1320px;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+#header{
+  width:1320px;
+  margin: 0 auto;
+  position: fixed;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background-color: rgba(0,0,0, .8); */
+  z-index: 300;
+}
+
+#header a{
+  color:black;
+}
+
+
+#header #logo{
+  float:left;
+  
+}
+
+#header .inner{
+  float: right;
+}
+
+#header .inner #gnb, #login-menu{
+  float:left;
+  overflow: hidden;
+  padding:10px;
+}
+
+#header .inner #login-menu{
+  margin-left:93px;
+}
+#header .inner #gnb li{
+  float: left;
+  margin-left:50px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#header .inner #gnb li:nth-child(1){
+  margin-left: 0;
+}
+
+#header .inner #login-menu li{
+  float: left;
+  margin-left:30px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#header .inner #login-menu li:nth-child(1){
+  margin-left:0;
+}
+
+/* 장바구니 */
+#header .inner #login-menu li a.cart{
+
+}
+#header .inner #login-menu li a.cart span.count{
+  display: inline-block;
+  width:20px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size:0.85em;
+  background: #ffc01d;
+}
+
+/* 메인배너 */
+#mainbanner{
+  background-image: url("../img/macbook.png");
+  background-repeat: no-repeat;
+  background-color:#f9f9f9;
+  background-position: 65%;
+  background-size: auto 100%;
+}
+
+#mainbanner .inner{
+  position: relative;
+  width:1320px;
+  height: 100vh;
+  margin:0 auto;
+
+}
+
+#mainbanner .inner .maintext{
+  position: absolute;
+  text-align: center;
+  width:100%;
+  min-height: 254px;
+  left:-10%;
+  top:36%;
+  
+  transform: translateY(-50%);
+}
+
+#mainbanner .inner .maintext p{
+  font-size: 50px;
+  color:#333333;
+
+}
+
+#mainbanner .inner .maintext p.maintitle{
+  line-height: 60px;
+
+}
+
+#mainbanner .inner .maintext p.subtitle{
+  font-size:20px;
+  margin-top: 30px;
+
+}
+#mainbanner .inner .maintext p.subtitle + .common-btn{
+  margin-top:40px;
+  border-radius: 30px;
+}
+.common-btn{
+  display:inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  background: #0055b8;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 30px;
+  
+}
+
+#container section:nth-of-type(2n){
+  background: #f9f9f9;
+}
+
+#container section:nth-of-type(1) .inner{
+  padding-top:145px;
+  min-height: 485px;
+}
+
+#container section:nth-of-type(2) .inner{
+  padding-top:145px;
+  min-height: 505px;
+  
+}
+
+/* 컨텐츠 영역 공동영역 */
+#container section .inner{
+  width:1320px;
+  min-height:320px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+#container section .inner h2{
+  font-size: 45px;
+  line-height: 60px;
+  color:#333333;
+}
+
+#container section .inner .subtitle{
+  font-size: 24px;
+  line-height: 30px;
+  color:#666666; 
+  margin-top: 22px;
+}
+
+
+#container section .inner .box-wrap{
+  overflow: hidden;
+  padding-top: 20px;
+
+}
+
+#container section .inner .box-wrap li{
+  float: left;
+  text-align: center;
+  width: calc(25% - 40px);
+  padding: 0 20px;
+  
+}
+
+#container section .inner .box-wrap li .items{
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+  padding:145px 45px;
+  box-sizing: border-box;
+  background: no-repeat;
+  transition-duration: 0.5s;
+}
+
+#container section .inner .box-wrap li .items:hover{
+  transform: scale(1.1);
+  background-color: rgba(0,0,0, .3);
+}
+
+#container section .inner .box-wrap li .items + .info{
+  margin-top:20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#container section .inner .box-wrap li .items + .info .text p{
+  margin-top: 20px;
+  text-align: left;
+}
+
+#container section .inner .box-wrap li:nth-of-type(1) .items{
+  background-image: url(../img/airpot.png);
+  
+}
+
+#container section .inner .box-wrap li:nth-of-type(2) .items{
+  background-image: url(../img/applewatch.png);
+  
+}
+
+#container section .inner .box-wrap li:nth-of-type(3) .items{
+  background-image: url(../img/airpot\ max.png);
+  
+}
+
+#container section .inner .box-wrap li:nth-of-type(4) .items{
+  background-image: url(../img/iphonecase.png);
+}
+
+
+#container section .inner .box-wrap li .items +.info h3{
+  font-size: 20px;
+  color: #252525;
+}
+
+
+#container section .inner .box-wrap li .items +.info .img{
+opacity: .65;
+transition-duration: 0.5s;
+}
+
+#container section .inner .box-wrap li .items +.info .img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* section 두번째 */
+
+#container section .inner .thumb-img-wrap{
+  text-align: center; 
+  /* 자식 요소 ul을 가운데 정렬한다.
+  단 ul의 display의 값이 inline이거나 inline-block 일때 만 적용가능*/
+}
+
+#container section .inner .thumb-img-wrap ul{
+  /* display: inline-block;
+  overflow: hidden; */
+  /* 자식요소 li의 컨텐츠 크기 만큼 너비가 지정됨*/
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(1){
+  margin-top: 70px;
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(2){
+  margin-top: 70px;
+}
+
+#container section .inner .thumb-img-wrap ul li{
+  float: left;
+  width: calc((100% / 6) - 20px);
+  height: 37px;
+  margin:10px;
+}
+
+#container section .inner .thumb-img-wrap ul li p{
+  
+  margin-top:20px;
+}
+
+
+#container section .inner .thumb-img-wrap ul li a{
+  display: block;
+  width: 100%;
+  color:#666666;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  padding-bottom: 10px;
+  
+}
+
+#container section .inner .thumb-img-wrap ul li a:hover{
+  background: rgba(0,0,0, .3);
+  
+}
+
+#container section .inner .thumb-img-wrap ul li img{
+  width:50%;
+  
+  
+  /*이미지가 초기값 220px 이상 또는 이하로 변경
+  li 요소의 너비 % 기준으로 크기가 변경됨*/
+
+}
+
+/* section 세번째 */
+
+#container section .inner .box{
+  float: left;
+  width:50%;
+  min-height: 650px;
+  text-align: center;
+  
+  
+}
+
+#container section .inner .box.img{
+  background: url(../img/iphone13.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+  
+
+#container section .inner .box .text-box{
+  
+  text-align: left;
+  margin-left: 83px;
+}
+
+#container section .inner .box .text-box h2{
+  line-height: 60px;
+  margin-top: 160.5px;
+}
+
+
+#container section .inner .box .text-box .common-btn{
+  margin-top:41px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+/*section 네번째*/
+
+#container #fourth{
+  background: url(../img/macbookair.png);
+  background-repeat: no-repeat;
+  background-position: 80%;
+  background-size: auto 100%;
+  background-color: #f9f9f9;
+}
+
+/*section 다섯째*/
+
+#container #five{
+  background: url(https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/psp-hero-banner-homepage-getsupport.image.large_2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  
+}
+
+#container #five .inner .box{
+  float: left;
+}
+
+#container #five .inner .box .text-box .subtitle{
+  color:white;
+}
+
+#container #five .inner .box .text-box h2{
+  font-size: 45px;
+  line-height: auto;
+  color: white;
+}
+
+/* 푸터 */
+
+#footer {
+  background: #eeeeee;
+
+}
+  
+#footer .inner{
+  position: relative;
+  width:1320px;
+  height:200px;
+  padding:48px 0 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+  
+#footer .inner .f-box {
+  
+  float: left;
+}
+
+#footer .inner .f-box:nth-of-type(2){
+  
+  padding-left: 75px;
+}
+
+#footer .inner .f-box > *{
+  padding-top: 20px;
+}
+#footer .inner .f-box ul {
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+#footer .inner .f-box ul li{
+  float: left;
+  margin-left: 40px;
+}
+
+#footer .inner .f-box ul li:first-child{
+  margin-left: 0;
+}
+  
+ 
+#footer .inner .f-box ul li a{ /* 첫째줄 */
+  color:#333333;
+}
+
+#footer .inner .f-box ul li a .tel p{ /* 둘째줄 */
+  color:#333333;
+  font-weight: bold;
+}
+
+#footer .inner .f-box .copyrigth p{ /* 셋째줄 */
+  color:#777777;
+}
+
+#footer .inner #familysite{
+  position: absolute;
+  width:190px;
+  height: 30px;
+  top:41px;
+  right:20px;
+  color:#333333;
+  outline: none;
+  appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  padding: 0 15px;
+  background-image: url(../img/select_box-in.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+
+#footer .inner #familysite:focus{
+  border: 1px solid #999999;
+  background-image: url(../img/select_box-in-reverse.png);
+}
+  
+
+
+  
+  
